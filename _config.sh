@@ -20,7 +20,9 @@ BACKUP_ROOT="/home/ubuntu/backups"
 RCON_HOST=localhost
 RCON_PORT=25575
 RCON_ADMIN_PASS=
-RCON_HOSTS_NAME=PalWorld
+
+# https://github.com/radj307/ARRCON/wiki#connecting-to-your-server
+ARRCON_SAVED_HOSTS=
 
 TZ=Asia/Seoul
 
@@ -52,7 +54,7 @@ if [ ${CONFIG_VALIDATION} = 1 ] ; then
     echo "Error: Bianary ARRCON_BIN do not exist. Please check _config.sh"
     exit 1
   fi
-  if [ -z "${RCON_HOSTS_NAME}" ]; then
+  if [ -z "${ARRCON_SAVED_HOSTS}" ]; then
     if [ -z "${RCON_HOST}" ]; then
       echo "Error: RCON_HOST is empty. Please check _config.sh"
       exit 1

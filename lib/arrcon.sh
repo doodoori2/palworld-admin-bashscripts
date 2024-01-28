@@ -7,10 +7,10 @@ fi
 
 arrcon_command()
 {
-  if [ -z "${RCON_HOSTS_NAME}" ]; then
+  if [ -z "${ARRCON_SAVED_HOSTS}" ]; then
     echo $1 | $ARRCON_BIN -H $RCON_HOST -P $RCON_PORT -p $RCON_ADMIN_PASS
   else
-    echo $1 | $ARRCON_BIN -S $RCON_HOSTS_NAME
+    echo $1 | $ARRCON_BIN -S $ARRCON_SAVED_HOSTS
   fi
 }
 
