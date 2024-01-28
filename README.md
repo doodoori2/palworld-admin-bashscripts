@@ -1,5 +1,7 @@
 # palworld-admin-bashscripts
 palworld-admin-bashscripts
+
+I Inspired by this script. https://gist.github.com/Bluefissure/b0fcb05c024ee60cad4e23eb55463062
 ___
 
 ## Installation
